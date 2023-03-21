@@ -1,0 +1,6 @@
+spring:
+  main:
+    # web-environment: false # web环境
+    web-application-type: none # none, servlet, reactive
+  profiles:
+    active: dev
