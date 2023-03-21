@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 @SpringBootApplication
 public class OFXApp extends BaseOFXApplication {
 
+	private static Stage stage;
+
 	public static void main(String[] args) {
 		launchOFX(OFXApp.class, TestView.class, args);
 	}
@@ -29,6 +31,7 @@ public class OFXApp extends BaseOFXApplication {
 
 		// custom settings
 		primaryStage.initStyle(StageStyle.TRANSPARENT);
+		stage = primaryStage;
 	}
 
 	/** 让无边框透明背景的窗口可以拖拽

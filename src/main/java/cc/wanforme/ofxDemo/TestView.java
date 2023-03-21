@@ -3,7 +3,7 @@ package cc.wanforme.ofxDemo;
 import cc.wanforme.ofx.BaseView;
 import cc.wanforme.ofx.FXMLView;
 
-@FXMLView("fxml/ImageSelector.fxml")
+@FXMLView(path = "fxml/ImageSelector.fxml")
 public class TestView extends BaseView{
 
 	@Override

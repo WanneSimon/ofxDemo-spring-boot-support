@@ -1,5 +1,10 @@
 package cc.wanforme.ofxDemo;
 
+import cc.wanforme.ofx.BaseView;
+import cc.wanforme.ofx.ViewHolder;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import cc.wanforme.ofx.FXMLController;
@@ -12,11 +17,13 @@ import javafx.scene.layout.FlowPane;
 @FXMLController
 public class ImageSearchController {
 	// 声明的顺序必须和 SceneBuilder 中的一致
-	
+	@Autowired
+	private OFXApp app;;
+
     @FXML
     private FlowPane imgShowContainer;
-	@FXML
-	private TextField pathInput;
+//	@FXML
+//	private TextField pathInput;
     @FXML
     private TextField imgSearcherInput;
 
@@ -53,5 +60,15 @@ public class ImageSearchController {
 	public void exit(){
 		System.exit(0);
 	}
-	
+
+	public void changeRootPane() {
+		TestView2 view = ViewHolder.get().getBaseView(TestView2.class);
+		Stage stage = app.getStage();
+
+		Scene scene = new Scene(view.getPane());
+		stage.setScene(scene);
+		stage.setTitle("change root");
+		OFXApp.dragWindow(scene, stage);
+	}
+
 }
