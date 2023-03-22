@@ -18,6 +18,14 @@
     <name>ofxDemo-spring-boot-support</name>
     <description>demo for ...</description>
 
+	<repositories>
+		<repository>
+			<id>ossrh</id>
+			<name>ossrh</name>
+			<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+		</repository>
+	</repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

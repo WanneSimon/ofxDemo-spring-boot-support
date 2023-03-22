@@ -14,7 +14,10 @@ public class TestView2 extends BaseView{
 	@Override
 	public void loaded() {
 		// do something after fxml loaded
-		getPane().getStylesheets().add("fxml/root.css");
+		String css = getClass().getResource("/fxml/root.css").toExternalForm();
+		System.out.println("css resource: " + css);
+		getPane().getStylesheets().add(css);
 	}
+
 
 }

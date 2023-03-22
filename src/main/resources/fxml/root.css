@@ -1,7 +1,10 @@
 /* https://blog.csdn.net/yye894817571/article/details/79416036 */
-.h-box{
+.header-hbox{
     -fx-background-color: #c7d2dc;
 }
-.scroll-pane{
-    -fx-background-color: #f0f1f6;
+.img-content-wrapper{
+    -fx-background-color: #c3caec;
+}
+.img-content{
+    -fx-background-color: #d9dae1;
 }
