@@ -12,7 +12,7 @@
 
     <groupId>cc.wanforme</groupId>
     <artifactId>ofxDemo-spring-boot-support</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
 
     <name>ofxDemo-spring-boot-support</name>
@@ -45,7 +45,7 @@
 		<dependency>
 		    <groupId>cc.wanforme</groupId>
 		    <artifactId>ofx-spring-boot-support</artifactId>
-		    <version>0.0.1</version>
+		    <version>0.0.3</version>
 	    </dependency>
 	    <dependency>
 	      <groupId>org.openjfx</groupId>

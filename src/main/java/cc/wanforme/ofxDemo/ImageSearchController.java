@@ -1,10 +1,10 @@
 package cc.wanforme.ofxDemo;
 
+import cc.wanforme.ofx.BaseOFXApplication;
 import cc.wanforme.ofx.BaseView;
 import cc.wanforme.ofx.ViewHolder;
 import javafx.event.Event;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -21,8 +21,8 @@ import org.springframework.context.annotation.Scope;
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) // controller can't be reused !
 public class ImageSearchController {
 	// 声明的顺序必须和 SceneBuilder 中的一致
-	@Autowired
-	private OFXApp app;
+//	@Autowired
+//	private OFXApp app;
 
     @FXML
     private FlowPane imgShowContainer;
@@ -66,7 +66,7 @@ public class ImageSearchController {
 	public void changeRootPane(Event e) {
 		e.consume();
 		BaseView view = ViewHolder.get().getBaseView(TestView.class);
-		Stage stage = app.getStage();
+		Stage stage = BaseOFXApplication.getStage();
 
 		boolean isRoot = view.getLoader().getController() == this;
 		if(isRoot) {

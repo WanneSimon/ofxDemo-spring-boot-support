@@ -2,8 +2,6 @@ package cc.wanforme.ofxDemo;
 
 import cc.wanforme.ofx.BaseView;
 import cc.wanforme.ofx.FXMLView;
-import javafx.scene.layout.Pane;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * this is a test case for multiple baseView
