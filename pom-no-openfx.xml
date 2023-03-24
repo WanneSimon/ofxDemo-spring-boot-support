@@ -33,11 +33,19 @@
 	    <tika-core.version>2.4.1</tika-core.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <name>ossrh</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 		<dependency>
-		    <groupId>cc.wanforme.ofx</groupId>
+		    <groupId>cc.wanforme</groupId>
 		    <artifactId>ofx-spring-boot-support</artifactId>
-		    <version>0.0.1</version>
+		    <version>0.0.3</version>
 	    </dependency>
 	    <dependency>
 	      <groupId>org.openjfx</groupId>
