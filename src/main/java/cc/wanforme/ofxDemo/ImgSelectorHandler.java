@@ -3,6 +3,8 @@ package cc.wanforme.ofxDemo;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import org.apache.tika.Tika;
@@ -166,7 +168,11 @@ public class ImgSelectorHandler {
 			try {
 				Image image = new Image(new FileInputStream(pic));
 	        	content.putImage(image);
-	        	
+
+				List<File> fileList = new ArrayList<>(1);
+				fileList.add(pic);
+				content.putFiles(fileList);
+
 	        	clipboard.setContent(content);
 			} catch (FileNotFoundException e1) {
 				e1.printStackTrace();
