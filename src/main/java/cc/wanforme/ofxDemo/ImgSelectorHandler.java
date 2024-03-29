@@ -44,7 +44,7 @@ public class ImgSelectorHandler {
 	
 	public ImgSelectorHandler() {
 //		this("G:\\Q图MessicPictures");
-		this("D:\\Picture");
+		this("D:\\Picture\\Q图MessicPictures");
 	}
 	
 	public ImgSelectorHandler(String path) {

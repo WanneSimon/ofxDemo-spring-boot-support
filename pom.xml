@@ -28,7 +28,7 @@
 		<java.version>17</java.version>
 
 		<javafx-fxml.version>19.0.2.1</javafx-fxml.version>
-		<ofx-spring-boot-support.version>0.0.1</ofx-spring-boot-support.version>
+		<ofx-spring-boot-support.version>0.0.6</ofx-spring-boot-support.version>
 		<!-- <log4j.version>2.14.1</log4j.version> -->
 		<tika-core.version>2.4.1</tika-core.version>
 	</properties>
@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>cc.wanforme</groupId>
 			<artifactId>ofx-spring-boot-support</artifactId>
-			<version>0.0.5</version>
+			<version>${ofx-spring-boot-support.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
