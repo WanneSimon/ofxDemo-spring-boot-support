@@ -3,19 +3,19 @@ package cc.wanforme.ofxDemo;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.stage.StageStyle;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import cc.wanforme.ofx.BaseOFXApplication;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-@SpringBootApplication
+/**
+ * note: BaseOFXApplication can not be the SpringBootApplication
+ */
 public class OFXApp extends BaseOFXApplication {
+	public static Stage stage;
 
-	public static void main(String[] args) {
-		launchOFX(OFXApp.class, TestView.class, args);
-	}
-	
+	public OFXApp() {}
+
 	@Override
 	protected void scene(Scene scene) {
 		// custom settings
@@ -23,6 +23,7 @@ public class OFXApp extends BaseOFXApplication {
 
 	@Override
 	protected void stage(Stage primaryStage) {
+		stage = primaryStage;
 		primaryStage.setOnShown(e -> {
 			dragWindow(primaryStage.getScene(), primaryStage);
 		});

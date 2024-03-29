@@ -66,7 +66,7 @@ public class ImageSearchController {
 	public void changeRootPane(Event e) {
 		e.consume();
 		BaseView view = ViewHolder.get().getBaseView(TestView.class);
-		Stage stage = BaseOFXApplication.getStage();
+		Stage stage = OFXApp.stage;
 
 		boolean isRoot = view.getLoader().getController() == this;
 		if(isRoot) {
